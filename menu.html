@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu Navigation</title>
+    <link rel="stylesheet" href="styleMenu.css">
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li class="list active" style="--clr: #f44336">
+                    <a href="#home">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li class="list" style="--clr: #ffa117">
+                    <a href="#game">
+                        <span class="icon">
+                            <ion-icon name="game-controller-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <li class="list" style="--clr: #b145e9">
+                    <a href="#settings">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </div>
+
+        <div id="home" class="content">
+            <div class="top-bar">
+                <img id="c-icon" src="c.png" alt="C Icon">
+                <div class="icon-text">
+                    <img src="diamond.png" alt="Diamond Icon">
+                    <span>2704</span>
+                </div>
+                <div class="icon-text">
+                    <img src="heart.png" alt="Heart Icon">
+                    <span>5</span>
+                </div>
+                <div id="menu-container">
+                    <img src="menu.png" alt="Menu Icon" id="menu-icon">
+                    <ul id="menu-list" style="display: none;">
+                        <li style="--i:4;">
+                            <a href="#"><span class="icon" style="background-image: url('ranking.png');"></span>Bảng xếp hạng</a>
+                        </li>
+                        <li style="--i:3;">
+                            <a href="#"><span class="icon" style="background-image: url('gift.png');"></span>Đổi Điểm</a>
+                        </li>
+                        <li style="--i:2;">
+                            <a href="#"><span class="icon" style="background-image: url('robot.png');"></span>Chat AI</a>
+                        </li>
+                        <li style="--i:1;">
+                            <a href="#"><span class="icon" style="background-image: url('call.png');"></span>Liên hệ hỗ trợ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nội dung home -->
+         
+        </div>
+        
+        <div id="game" class="content">
+            <div class="top-bar">
+                <img id="c-icon" src="c.png" alt="C Icon">
+                <div class="icon-text">
+                    <img src="diamond.png" alt="Diamond Icon">
+                    <span>2704</span>
+                </div>
+                <div class="icon-text">
+                    <img src="heart.png" alt="Heart Icon">
+                    <span>5</span>
+                </div>
+                <div id="menu-container">
+                    <img src="menu.png" alt="Menu Icon" id="menu-icon">
+                    <ul id="menu-list" style="display: none;">
+                        <li style="--i:4;">
+                            <a href="#"><span class="icon" style="background-image: url('ranking.png');"></span>Bảng xếp hạng</a>
+                        </li>
+                        <li style="--i:3;">
+                            <a href="#"><span class="icon" style="background-image: url('gift.png');"></span>Đổi Điểm</a>
+                        </li>
+                        <li style="--i:2;">
+                            <a href="#"><span class="icon" style="background-image: url('robot.png');"></span>Chat AI</a>
+                        </li>
+                        <li style="--i:1;">
+                            <a href="#"><span class="icon" style="background-image: url('call.png');"></span>Liên hệ hỗ trợ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nội dung game -->
+            <img id="quanli" src="quanli.jpg" alt="Quan li thoi gian ">
+
+        </div>
+        
+        
+        <div id="settings" class="content" style="display: none;">This is settings screen</div>
+    </div>
+
+    <!-- Thanh dọc sẽ được hiển thị khi nhấp vào biểu tượng c.png -->
+    <div id="vertical-bar" style="display: none;">
+        <!-- Nội dung của thanh dọc -->
+        <img src="c++.png" alt="Menu Icon">
+        <img src="html.png" alt="Menu Icon">
+        <img src="css.png" alt="Menu Icon">
+        <img src="javascript.png" alt="Menu Icon">
+        <img src="python.png" alt="Menu Icon">
+        <img src="java.png" alt="Menu Icon">
+    </div>
+
+    <script src="scriptMenu.js"></script>
+</body>
+</html>

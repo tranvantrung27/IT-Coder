@@ -1,4 +1,4 @@
-document.getElementById("font").textContent = "E-TimeCoder";
+document.getElementById("font").textContent = "IT Coder";
 
 function togglePasswordVisibility() {
     var passwordInput = document.getElementById("password");
@@ -35,10 +35,10 @@ loginButton.addEventListener('click', function(event) {
     } else {
         // Nếu người dùng đã nhập tên đăng nhập và mật khẩu, kích hoạt hiệu ứng xé toạc
         $(".login-wrapper").addClass("tearEffect");
-        setTimeout(function() {
-            window.location.href = '../Menu/menu.html';
+        
+            window.location.href = 'menu.html';
   // Chuyển hướng người dùng đến một trang trắng
-        }, 2000);
+
     }
 });
 
@@ -50,7 +50,7 @@ var facebookLoginButton = document.querySelector('.facebook');
 googleLoginButton.addEventListener('click', function(event) {
     event.preventDefault();  // Ngăn chặn hành vi mặc định của nút
     // Chuyển hướng người dùng đến trang "Round Navigation Menu"
-    window.location.href = '../Menu/menu.html';
+    window.location.href = 'menu.html';
 
 });
 
