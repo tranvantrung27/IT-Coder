@@ -181,7 +181,15 @@ body {
   background-color: #5cb0b5;
 }
 
-
+#gamess {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 400px;
+  height: 550px;
+  object-fit: fill;
+  
+}
 #quanli {
   position: absolute;
   left: 0;
@@ -190,6 +198,15 @@ body {
   height: 550px;
   object-fit: fill;
 }
+#setting {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 400px;
+  height: 550px;
+  object-fit: fill;
+}
+
 
 #menu-container {
   position: relative; 
