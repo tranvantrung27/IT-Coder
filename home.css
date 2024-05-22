@@ -1,0 +1,733 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background-color:  #f3f3f3;
+}
+
+.bottom-tabbar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #373d37;
+    text-align: center;
+    padding: 50px 0;
+    box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.3);
+}
+
+.tab-item {
+    flex-grow: 1;
+    flex: 1;
+    text-align: center;
+}
+
+/* CSS cho "Ngôn ngữ" */
+.container-languages {
+    bottom: 45px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    border-radius: 10px;
+}
+.tooltip-container-languages {
+    bottom: 90px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.tooltip-languages {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 39px;
+    transform: translateX(-50%);
+    padding: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+      inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+      5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.profile-languages {
+    background: rgba(219, 15, 15, 0.1)f;
+    border: 1px solid #7a1c1c;
+    border-radius: 10px 10px;
+    padding: 10px;
+    height: 273px; 
+    overflow-y: auto; 
+    scrollbar-width: none; 
+    
+}
+.profile-languages::-webkit-scrollbar {
+    display: none; /* Ẩn thanh cuộn cho Chrome, Safari và Opera... */
+}
+/* */
+ .tooltip-container-languages .tooltip-languages {
+    top: -270px;
+    opacity: 1;
+    position: absolute;
+    visibility: visible;
+    pointer-events: auto;
+} 
+
+.icon-languages {
+
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    position: relative;
+}
+
+.layer-languages {
+    width: 55px;
+    height: 55px;
+     transition: transform 0.3s; 
+}
+
+ .icon-languages:hover .layer-languages {
+    transform: rotate(-35deg) skew(20deg);
+} 
+
+.layer-languages span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #9e1313;
+    border-radius: 15px;
+    transition: all 0.3s; 
+}
+
+.layer-languages span,
+/* */
+.text-languages {
+    position: absolute;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+
+.icon-languages:hover.layer-languages span {
+    box-shadow: -1px 1px 3px #e6683c;
+} 
+
+.icon-languages .text-languages {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    opacity: 0;
+    font-weight: 500;
+    transform: translateX(-50%);
+     transition: bottom 0.3s ease, opacity 0.3s ease; 
+}
+
+ .icon-languages:hover .text-languages {
+    bottom: -35px;
+    opacity: 1;
+} 
+
+ .icon-languages:hover .layer-languages span:nth-child(1) {
+    opacity: 0.2;
+}
+
+.icon-languages:hover .layer-languages span:nth-child(2) {
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+}
+
+.icon-languages:hover .layer-languages span:nth-child(3) {
+    opacity: 0.6;
+    transform: translate(10px, -10px);
+}
+
+.icon-languages:hover .layer-languages span:nth-child(4) {
+    opacity: 0.8;
+    transform: translate(15px, -15px);
+}
+
+.icon-languages:hover .layer-languages span:nth-child(5) {
+    opacity: 1;
+    transform: translate(20px, -20px);
+} 
+
+.user-languages {
+    border: 1px solid #ffffff;
+    border-radius: 18px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 5px
+}
+
+.img1-languages{
+    background-image: url('python.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img2-languages{
+    background-image: url('c.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.img3-languages{
+    background-image: url('s.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img4-languages{
+    background-image: url('c-sharp.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img5-languages{
+    background-image: url('html.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img6-languages{
+    background-image: url('css.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img7-languages{
+    background-image: url('javascript.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img8-languages{
+    background-image: url('java.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img9-languages{
+    background-image: url('php.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img10-languages{
+    background-image: url('flutter.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img11-languages{
+    background-image: url('dart.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img12-languages{
+    background-image: url('photo.png');
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name-languages {
+    position: relative;
+    font-size: 17px;
+    font-weight: 700;
+    color: #e6683c;
+    white-space: nowrap;
+    top: 15px;
+}
+
+.details-languages {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    color: #fff;
+}
+
+.about-languages {
+    color: #ccc;
+    padding-top: 5px;
+}
+
+.csspng-languages img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* CSS cho "Game" */
+.tooltip-container-game {
+    bottom: 45px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.icon-game {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    position: relative;
+}
+
+.layer-game {
+    width: 55px;
+    height: 55px;
+    transition: transform 0.3s; 
+}
+
+.icon-game:hover .layer-game {
+    transform: rotate(-35deg) skew(20deg);
+} 
+
+.layer-game span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    transition: all 0.3s; 
+}
+
+.layer-game span,
+.text-game {
+    position: absolute;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.icon-game:hover.layer-game span {
+    box-shadow: -1px 1px 3px #ffffff;
+} 
+
+.icon-game .text-game {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    opacity: 0;
+    font-weight: 500;
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease, opacity 0.3s ease; 
+}
+
+.icon-game:hover .text-game {
+    bottom: -35px;
+    opacity: 1;
+} 
+
+.icon-game:hover .layer-game span:nth-child(1) {
+    opacity: 0.2;
+}
+
+.icon-game:hover .layer-game span:nth-child(2) {
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+}
+
+.icon-game:hover .layer-game span:nth-child(3) {
+    opacity: 0.6;
+    transform: translate(10px, -10px);
+}
+
+.icon-game:hover .layer-game span:nth-child(4) {
+    opacity: 0.8;
+    transform: translate(15px, -15px);
+}
+
+.icon-game:hover .layer-game span:nth-child(5) {
+    opacity: 1;
+    transform: translate(20px, -20px);
+} 
+
+.gamepng-game img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CSS cho "Cài đặt" */
+.tooltip-container-setting {
+    bottom: 45px;
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+.icon-setting {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    position: relative;
+}
+
+.layer-setting {
+    width: 55px;
+    height: 55px;
+    transition: transform 0.3s; 
+}
+
+.icon-setting:hover .layer-setting {
+    transform: rotate(-35deg) skew(20deg);
+} 
+
+.layer-setting span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    transition: all 0.3s; 
+}
+
+.layer-setting span,
+.text-setting {
+    position: absolute;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+.icon-setting:hover.layer-setting span {
+    box-shadow: -1px 1px 3px #ffffff;
+} 
+
+.icon-setting .text-setting {
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    opacity: 0;
+    font-weight: 500;
+    transform: translateX(-50%);
+    transition: bottom 0.3s ease, opacity 0.3s ease; 
+}
+
+.icon-setting:hover .text-setting {
+    bottom: -35px;
+    opacity: 1;
+} 
+
+.icon-setting:hover .layer-setting span:nth-child(1) {
+    opacity: 0.2;
+}
+
+.icon-setting:hover .layer-setting span:nth-child(2) {
+    opacity: 0.4;
+    transform: translate(5px, -5px);
+}
+
+.icon-setting:hover .layer-setting span:nth-child(3) {
+    opacity: 0.6;
+    transform: translate(10px, -10px);
+}
+
+.icon-setting:hover .layer-setting span:nth-child(4) {
+    opacity: 0.8;
+    transform: translate(15px, -15px);
+}
+
+.icon-setting:hover .layer-setting span:nth-child(5) {
+    opacity: 1;
+    transform: translate(20px, -20px);
+} 
+
+.settingpng-setting img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-languages, .tooltip-container-game, .tooltip-container-setting {
+    display: flex;
+    position: relative;
+    left: 250px;
+}
+.wrapper{
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    height: 30px;
+    width: 200px;
+    cursor: default;
+    border-radius: 5px;
+    animation: animate 1.5s linear infinite;
+}
+.wrapper .display,
+.wrapper span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper .display{
+    position: absolute;
+    left: 40px;
+    height: 25px;
+    width: 400px;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    border-radius: 0px; 
+    text-align: center;
+}
+.wrapper .display #font{
+    position: absolute;
+    left:120px;
+    font-size: 30px;
+    line-height: 50px; 
+    color: #fdfbfb;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-align: center; 
+    background: linear-gradient(135deg, aqua, rgb(0, 255, 0), rgb(255, 255, 0), orange, red, rgb(255, 0, 234));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 1.5s linear infinite;
+}
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+.wrapper span{
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    border-radius: 10px;
+}
+.wrapper span:first-child{
+    filter: blur(10px);
+}
+.wrapper span:last-child{
+    filter: blur(20px);
+}
+/* thuộc tính new-class */
+.new-class {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    right: 0;
+    width: 400px; 
+    height: 50px; 
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+.icon-text img {
+        margin-right: 15px;
+}
+.icon-text {
+    display: flex;
+    align-items: center;
+}
+.icon-text img {
+    margin-right: 15px;
+}
+.heart {
+    width: 60px;  
+    height: 60px; 
+}
+
+.diamond {
+    width: 50px;  
+    height: 45px; 
+}
+
+.fire {
+    width: 50px;  
+    height: 40px; 
+}
+/*menu-container*/
+#menu-container {
+    position: fixed ;
+    top: 15px;
+    right: 190px; /* Thay đổi ở đây */
+    width: 400px; 
+    height: 50px; 
+    display: flex;
+    justify-content: end;
+}
+
+  #menu-list {
+    position: absolute; /* Đặt vị trí tuyệt đối cho danh sách */
+    top: 100%;
+    top:108px;
+    right: -18px; /* Đặt danh sách bên trái của container */
+    z-index: 1; /* Đảm bảo danh sách luôn nằm trên các thành phần khác */
+    transform: skewY(-15deg);
+  }
+  
+  
+  #menu-list li {
+    position: relative;
+    list-style: none;
+    width: 200px;
+    padding: 15px;
+    background-color: #3e3f46;
+    z-index: calc(1 *var(--i));
+    transition: 0.5s;
+  }
+  
+  #menu-list li:hover {
+    background: #996fae;
+    transform: translateX(-50px);
+  }
+  #menu-list li::before {
+    font-family: "FontAwesome";
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #2e3133;
+    background-size: 20px;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+  }
+  
+  #menu-list li:hover::before {
+    background: #7b5190;
+  }
+  #menu-list li:after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #35383e;
+    transform-origin: bottom ;
+    transform: skewX(45deg);
+    transition: 0.5s;
+  }
+  #menu-list li:hover::after {
+    background: #86589d;
+  }
+  #menu-list li a {
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+  }
+  #menu-list li:hover a {
+    color: #fff;
+  }
+  #menu-list li:last-child::after {
+    box-shadow: -120px 120px 20px rgba(0, 0, 0, 0.25);
+  }
+  #menu-list .icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    background-position: center;
+    margin-right: 5px;
+  }
+@media screen and (max-width: 600px) {
+    .icon-languages {
+      top: 50px;
+      left: 50px;
+    }
+}
