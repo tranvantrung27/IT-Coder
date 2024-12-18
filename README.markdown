@@ -2,6 +2,15 @@
 
 # LUXURY 4 STYLE  
 **_Điền_ | _Hiếu_ | _Nhất_ | _Thắng_**
+
+</div>
+
+---
+
+<div style="background-color:#161B22; padding:10px; border-radius:8px;">
+
+</div>  
+
 ---
 
 ## Popular Content  
