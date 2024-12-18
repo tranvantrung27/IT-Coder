@@ -1,5 +1,5 @@
 # LUXURY 4 STYLE
-**_Founder_ | _Hacker_ | _Creator_**
+**_Điền_ | _Hiếu_ | _Nhất_ | _Thắng_**
 
 ---
 
