@@ -2,15 +2,6 @@
 
 # LUXURY 4 STYLE  
 **_Điền_ | _Hiếu_ | _Nhất_ | _Thắng_**
-
-</div>
-
----
-
-
-
-</div>  
-
 ---
 
 ## Popular Content  
