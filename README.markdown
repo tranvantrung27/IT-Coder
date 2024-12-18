@@ -1,5 +1,9 @@
-# LUXURY 4 STYLE
+<div align="center">
+
+# LUXURY 4 STYLE  
 **_Điền_ | _Hiếu_ | _Nhất_ | _Thắng_**
+
+</div>
 
 ---
 
@@ -35,7 +39,16 @@ but my friends said I’d be a great content creator and turns out they might’
 
 ---
 
-### 🔒 HI ANH EM  
+<div align="center">
+
+### 🔒 HI ANH EM
+
+</div>
+
 ---
 
+<div align="center">
+
 **👆 The above image is interactive! Try clicking on the tabs :)**
+
+</div>
